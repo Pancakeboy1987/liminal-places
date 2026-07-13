@@ -22,10 +22,17 @@ export default function Home() {
         <Header />
 
       <main className={styles.mainContent}>
-        <h1 className={styles.sectionTitle}>
-          Эстетика пустоты: <br />
-          <span>пограничные пространства России</span>
-        </h1>
+        <div className={styles.sectionTitle}>
+        <h1 >
+          Эстетика пустоты: 
+          </h1>
+          <h2>
+            Пограничные пространства России
+        </h2>
+        </div>
+
+        
+    
 
 
         <div className={styles.carouselContainer}>
@@ -44,14 +51,20 @@ export default function Home() {
             
             
             slidesPerView={'auto'}
+
+            loopedSlides={3}
+
+            centredSlides={true}
             
 
             effect={'coverflow'}
             coverflowEffect={{
-              rotate: 0,        // Угол поворота боковых слайдов 
+              rotate: 0,    
+                  // Угол поворота боковых слайдов 
+              speed:600,
               stretch: -40,     // Расстояние между слайдами 
-              depth: 150,       // Глубина (чем больше, тем дальше боковые слайды уходят назад)
-              modifier: 1,      // Множитель эффекта
+              depth: 350,       // Глубина (чем больше, тем дальше боковые слайды уходят назад)
+              modifier: 3,      // Множитель эффекта
               slideShadows: false,
             }}
             className={styles.swiperContainer}

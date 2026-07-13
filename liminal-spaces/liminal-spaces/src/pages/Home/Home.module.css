@@ -1,5 +1,5 @@
 .pageWrapper {
-    background-color: #0b0c10;
+    background-color: rgb(132,148,196);
     color: #fff;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -86,4 +86,16 @@
     color: #00f0ff !important;
     text-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
     transform: scale(0.7);
+  }
+
+  .sectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(156,134,162);
+    flex-direction: column;
+
+
   }
