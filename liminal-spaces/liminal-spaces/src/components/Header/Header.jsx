@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -13,9 +14,9 @@ export default function Header() {
 
       <nav className={styles.center}>
         <ul className={styles.menuLinks}>
-          <li><a href="#home">Главная</a></li>
+          <li><Link className="home-link" to={`/`}>Главная</Link></li>
           <li><a href="#archive">Архив мест</a></li>
-          <li><a href="#about">О проекте</a></li>
+          <li><Link className="about-link" to={`/pages/about`}>О проекте</Link></li>
         </ul>
       </nav>
 
