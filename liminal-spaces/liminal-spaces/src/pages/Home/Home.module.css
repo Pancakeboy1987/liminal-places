@@ -25,7 +25,7 @@
   }
 
   .swiperSlide {
-    width: 380px; 
+    width: 750px; 
     height: auto;
     transition: filter 0.5s ease; 
   }
@@ -44,17 +44,19 @@
   
   /* Стили самой карточки внутри слайдера */
   .card {
-    background: #12131c;
+    background: rgba(156,134,162,0.6);
     border-radius: 24px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
+    width: 790px;
+    height: 440px;
   }
   
 
   .swiperSlide:global(.swiper-slide-active) .card {
-    border-color: #ff007f;
+    border-color: rgb(241,154,154);
     box-shadow: 0 0 30px rgba(255, 0, 127, 0.25), 0 0 60px rgba(0, 240, 255, 0.1);
   }
   
@@ -97,5 +99,17 @@
     background: rgb(156,134,162);
     flex-direction: column;
 
+  }
 
+  .baseSection{
+    border-top: 2px solid rgb(241,154,154);
+    
+  }
+
+  .baseContent{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

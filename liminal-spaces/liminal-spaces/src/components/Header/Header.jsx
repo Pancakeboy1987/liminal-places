@@ -15,7 +15,7 @@ export default function Header() {
       <nav className={styles.center}>
         <ul className={styles.menuLinks}>
           <li><Link className="home-link" to={`/`}>Главная</Link></li>
-          <li><a href="#archive">Архив мест</a></li>
+          <li><Link className="places-link" to={`/pages/list`}>Архив мест</Link></li>
           <li><Link className="about-link" to={`/pages/about`}>О проекте</Link></li>
         </ul>
       </nav>

@@ -60,7 +60,7 @@ export default function Home() {
             effect={'coverflow'}
             coverflowEffect={{
               rotate: 0,    
-                  // Угол поворота боковых слайдов 
+ 
               speed:600,
               stretch: -40,     // Расстояние между слайдами 
               depth: 350,       // Глубина (чем больше, тем дальше боковые слайды уходят назад)
@@ -88,10 +88,9 @@ export default function Home() {
       </main>
 
 
-      <section className={styles.promoSection}>
-        <div className={styles.promoContent}>
+      <section className={styles.baseSection}>
+        <div className={styles.baseContent}>
           <h2>Исследуй то, что скрыто между кадрами</h2>
-          <button className={styles.promoBtn}>Читать манифест</button>
         </div>
       </section>
     </div>
