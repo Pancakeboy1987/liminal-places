@@ -1,4 +1,3 @@
-/* src/pages/PlaceDetail/PlaceDetail.module.css */
 
 .pageWrapper {
     background-color: rgb(132,148,196);
@@ -54,7 +53,7 @@
     letter-spacing: 1px;
   }
   
-  /* Рамка для фотографии посередине */
+
   .imageFrame {
     width: 100%;
     max-width: 850px;
@@ -74,7 +73,7 @@
     display: block;
   }
   
-  /* Блок информации под фото */
+
   .infoBlock {
     max-width: 700px;
     background: rgba(18, 19, 28, 0.5);
