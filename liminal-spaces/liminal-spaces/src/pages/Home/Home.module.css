@@ -42,7 +42,7 @@
     opacity: 1;
   }
   
-  /* Стили самой карточки внутри слайдера */
+  
   .card {
     background: rgba(156,134,162,0.6);
     border-radius: 24px;
@@ -52,6 +52,23 @@
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
     width: 790px;
     height: 440px;
+  }
+
+
+.cardLink {
+    text-decoration: none; 
+    color: inherit;        
+    display: block;       
+    outline: none;         
+  }
+  
+  
+  .cardLink:hover,
+  .cardLink:focus,
+  .cardLink:active,
+  .cardLink:visited {
+    text-decoration: none;
+    color: inherit;
   }
   
 

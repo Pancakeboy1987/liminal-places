@@ -3,6 +3,8 @@ import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // стили Swiper (базовые и для эффектов)
 import 'swiper/css';
@@ -15,6 +17,7 @@ import { placesData } from '../../data/places';
 import Header from '../../components/Header/Header';
 
 export default function Home() {
+  console.log('ЧТО ЛЕЖИТ В placesData:', placesData);
   return (
     <div className={styles.pageWrapper}>
         
@@ -69,8 +72,9 @@ export default function Home() {
             }}
             className={styles.swiperContainer}
           >
-            {placesData.map((place) => (
+            {placesData?.map((place) => (
               <SwiperSlide key={place.id} className={styles.swiperSlide}>
+                <Link to={`/pages/${place.id}`} className={styles.cardLink}>
                 <div className={styles.card}>
                   <div className={styles.imageWrapper}>
                     <img src={place.image} alt={place.title} />
@@ -81,6 +85,7 @@ export default function Home() {
                     <p>{place.description}</p>
                   </div>
                 </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -1,0 +1,140 @@
+/* src/pages/PlaceDetail/PlaceDetail.module.css */
+
+.pageWrapper {
+    background-color: rgb(132,148,196);
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+
+  .centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .titleHeader {
+    margin-bottom: 24px;
+  }
+  
+  .tagBadge {
+    display: inline-block;
+    color: #dd8897;
+    border: 1px solid rgba(247, 197, 137, 0.4);
+    background: rgba(243, 212, 118, 0.1);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    letter-spacing: 1px;
+  }
+  
+  /* Рамка для фотографии посередине */
+  .imageFrame {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.15), 0 15px 35px rgba(0, 0, 0, 0.6);
+    margin-bottom: 32px;
+    background-color: #12131c;
+  }
+  
+  .placeImage {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Блок информации под фото */
+  .infoBlock {
+    max-width: 700px;
+    background: rgba(18, 19, 28, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 28px 36px;
+    backdrop-filter: blur(8px);
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .fullStory {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  
+  .backLink {
+    display: inline-block;
+    color: #00f0ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .backLink:hover {
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+  }
+  
+
+  .notFoundContainer {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .backBtn {
+    color: #00f0ff;
+    text-decoration: none;
+  }
+  
+  /* Адаптируем под мобилки */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    .infoBlock {
+      padding: 20px;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }

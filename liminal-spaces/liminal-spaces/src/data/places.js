@@ -3,12 +3,13 @@ import hzb from "/Users/nikita/Desktop/frontend road/projects/liminal-places/lim
 import panelka from "/Users/nikita/Desktop/frontend road/projects/liminal-places/liminal-spaces/liminal-spaces/src/assets/images/pannels.jpeg"
 import kavkaz from "/Users/nikita/Desktop/frontend road/projects/liminal-places/liminal-spaces/liminal-spaces/src/assets/images/kavkaz.jpeg"
 import tri from "/Users/nikita/Desktop/frontend road/projects/liminal-places/liminal-spaces/liminal-spaces/src/assets/images/tri.jpg"
+import pioneer from "/Users/nikita/Desktop/frontend road/projects/liminal-places/liminal-spaces/liminal-spaces/src/assets/images/pioneer.jpeg"
 
 export const placesData = [
     {
       id: "khovrinka",
       title: "Ховринская больница",
-      tag: "Урбекс / Заброшенное",
+      tag: "Болььше не существует",
       description: "Культовый недостроенный медицинский комплекс в Москве. Мрачные бетонные коридоры, затопленные подвалы и геометрия брутализма.",
       image: hzb,
       fullStory: "Подробная история Ховринской больницы для отдельного экрана..."
@@ -37,11 +38,11 @@ export const placesData = [
         image: tri,
         fullStory: "Размышления о феномене пограничного состояния спальных районов..."
       },{
-        id: "neon-panel",
-        title: "Панельные лабиринты",
-        tag: "Эстетика окраин",
-        description: "Бесконечные спальные районы в предрассветном тумане. Окна горят розовым светом, а синее неоновое сияние неба создает ощущение бесконечного сна.",
-        image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80",
-        fullStory: "Размышления о феномене пограничного состояния спальных районов..."
+        id: "pioneer",
+        title: "Пионер-лагерь Сказка",
+        tag: "Эстетика советского лагеря",
+        description: "Самый необычный и красивый пионерский лагерь,скрытый в лесах подмосковья ",
+        image: pioneer,
+        fullStory: "Исследуйте прошлое нашей страны."
       },
   ];

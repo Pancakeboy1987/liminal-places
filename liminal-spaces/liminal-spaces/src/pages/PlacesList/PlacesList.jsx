@@ -27,7 +27,7 @@ export default function PlaceList() {
 
         <div className={styles.gridContainer}>
           {placesData.map((place) => (
-            <Link to={`/place/${place.id}`} key={place.id} className={styles.cardLink}>
+            <Link to={`/pages/${place.id}`} key={place.id} className={styles.cardLink}>
               <div className={styles.card}>
                 
 

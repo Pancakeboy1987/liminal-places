@@ -22,7 +22,7 @@ export default function Header() {
 
 
       <div className={styles.right}>
-        <button className={styles.actionBtn}>Манифест</button>
+  
       </div>
 
     </header>
